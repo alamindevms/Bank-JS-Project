@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Bank-JS-Project</title>
+		<!-- Bootstrap - v5 -->
+		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" />
+		<link rel="stylesheet" href="style.css" />
+	</head>
+	<body>
+		<div id="login-area">
+			<h1 class="text-center mb-5">Welcome to Pioneer Bank</h1>
+			<div class="submit-area rounded shadow p-5">
+				<h4>Login</h4>
+				<input type="text" name="" class="form-control my-4" placeholder="Email" />
+				<input type="password" name="" class="form-control mb-4" placeholder="Password" />
+				<button type="submit" id="login" class="btn btn-success px-4">Login</button>
+			</div>
+		</div>
+		<!-- ./login-area -->
+		<div id="transaction">
+			<h1 class="text-center mb-5">Transaction Area</h1>
+			<div class="row">
+				<div class="col-md-4">
+					<div class="box p-4 mx-2 rounded bg-success text-white">
+						<h5>Deposite</h5>
+						<h2>$ <span id="currentDeposite">00</span></h2>
+					</div>
+				</div>
+				<div class="col-md-4">
+					<div class="box p-4 mx-2 rounded bg-warning text-white">
+						<h5>Withdraw</h5>
+						<h2>$ <span id="currentWithdraw">00</span></h2>
+					</div>
+				</div>
+				<div class="col-md-4">
+					<div class="box p-4 mx-2 rounded bg-info text-white">
+						<h5>Balance</h5>
+						<h2>$ <span id="currentBalance">00</span></h2>
+					</div>
+				</div>
+			</div>
+			<div class="row my-5">
+				<div class="col-md-6">
+					<div class="rounded shadow p-5">
+						<h2>Deposite</h2>
+						<input id="depositeAmount" type="text" class="form-control my-3" id="deposite" placeholder="Amount ($)" />
+						<button class="btn btn-success" id="deposite">Deposite</button>
+					</div>
+				</div>
+				<div class="col-md-6">
+					<div class="rounded shadow p-5">
+						<h2>Withdraw</h2>
+						<input id="withdrawAmount" type="text" class="form-control my-3" id="deposite" placeholder="Amount ($)" />
+						<button class="btn btn-success" id="withdraw">Withdraw</button>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- ./transaction -->
+		<!-- custom-js -->
+		<script src="custom.js"></script>
+	</body>
+</html>
